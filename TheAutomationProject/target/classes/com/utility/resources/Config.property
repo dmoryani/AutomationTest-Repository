@@ -1,0 +1,120 @@
+#--For Chrome driver--!
+
+driver_path=D:/eclipse/workspace/TheAutomationProject/chromedriver.exe
+driver_value=webdriver.chrome.driver
+
+#--For IE driver--!
+#driver_path=D:/eclipse_workspace/Selenium/iedriver/IEDriverServer.exe
+#driver_value=webdriver.ie.driver
+
+url=http://live.guru99.com/
+
+#TestCase2
+#
+Mobile_menu_locator = .//*[@id='nav']/ol/li[1]/a
+Sony_Xperia_price_locator = .//*[@id='product-price-1']/span
+Sony_Xperia_Model= .//*[@id='product-collection-image-1']
+
+#TestCase3
+Mobile_Xperia_AddToCart = .//*[@id='top']/body/div[1]/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[2]/div/div[3]/button
+#Shopping Cart Page
+Xperia_Quantity = .//*[@id='shopping-cart-table']/tbody/tr/td[4]/input
+Xperia_UpdateQty = .//*[@id='shopping-cart-table']/tbody/tr/td[4]/button
+Xperia_ErrorMessage = .//*[@id='top']/body/div[1]/div/div[2]/div/div/div/ul/li/ul/li/span
+ActualErrorMessage = Some of the products cannot be ordered in requested quantity.
+EmptyCart = empty_cart_button
+ActualEmptyCartMessage = SHOPPING CART IS EMPTY
+MessageafterEmptyCart = .//*[@id='top']/body/div[1]/div/div[2]/div/div/div[1]/h1
+
+
+#TestCase4
+Xperia_AddToCompare = (//a[contains(text(),'Add to Compare')])[2]
+Iphone_AddToCompare = (//a[contains(text(),'Add to Compare')])[3]
+Compare_Button =//button[@title='Compare']
+Compare_popupTitle =.//*[@id='top']/body/div[1]/div[1]/h1
+CompareActualTitle =COMPARE PRODUCTS
+Xperia_linkText = SONY XPERIA
+Iphone_linkText = IPHONE
+
+#TestCase5
+MyAccount_Link=.//*[@id='top']/body/div[1]/div/div[3]/div/div[4]/ul/li[1]/a
+CreateAccount = (//span[contains(text(),'Create an Account')])
+FirstName_id = firstname
+LastName_Id=lastname
+Email_id=email_address
+Password_id= password
+Confirm_Pwd_id= confirmation
+Register_button =(//span[contains(text(),'Register')])
+Registration_Message_xpath=(//span[contains(text(),'Thank you for registering with Main Website Store.')])
+Actual_Reg_msg=Thank you for registering with Main Website Store.
+TV_menu =(//a[contains(text(),'TV')])
+LG_LCD_AddtoWishlist =.//*[@id='top']/body/div[1]/div/div[2]/div/div[2]/div[1]/div[2]/ul/li[1]/div/div[2]/ul/li[1]/a
+Share_Wishlist =(//span[contains(text(),'Share Wishlist')])
+Message_ID= message
+Wishlist_Message_xpath=(//span[contains(text(),'Your Wishlist has been shared.')])
+Actual_Wishlist_msg =Your Wishlist has been shared.
+
+#TestCase6
+LoginEmail_id=email
+LoginPassword_id= pass
+LoginButton_id=send2
+My_Wishlist= .//*[@id='top']/body/div[1]/div/div[2]/div/div[1]/div/div[2]/ul/li[8]/a
+LG_AddToCart=.//*[text()='Add to Cart']
+StateRegion_Id=region_id
+Zip_Id=postcode
+Estimate_Button=(//span[contains(text(),'Estimate')])
+FlatRate_Id=s_method_flatrate_flatrate
+FlatRatePrice_xpath= (//span[contains(text(),'$5.00')])
+ActualFlatRatePrice = $5.00
+UpdateTotal_Button=//*[@id="co-shipping-method-form"]/div/button/span/span
+GrandTotal_Label=(//span[contains(text(),'$620.00')])
+ActualGrandTotal= $620.00
+ProceedToCheckout_xpath =.//*[text()='Proceed to Checkout']
+BillingAddress_id=billing:street1
+BillingCity_id=billing:city
+BillingStateRegion_Id=billing:region_id
+BillingZip_id=billing:postcode
+BillingTelephone_id=billing:telephone
+BillingContinue_Button=.//*[@id='billing-buttons-container']/button
+ShippingContinue_Button=.//*[@id='shipping-method-buttons-container']/button
+PaymentContinue_Button=.//*[@id='payment-buttons-container']//span[text()='Continue']
+Checkout_CheckMoneyOrder_id=p_method_checkmo
+PlaceOrder_button=.//*[text()='Place Order']
+OrderPlaced_Message=(//h1[contains(text(),'Your order has been received.')])
+ActualOrdermessage=Your order has been received.
+Order_No_xpath=.//*[@id='top']/body/div[1]/div/div[2]/div/div/p[1]/a
+
+#TestCase7
+Myorder=.//*[@id='top']/body/div[1]/div/div[2]/div/div[1]/div/div[2]/ul/li[4]/a
+ViewOrder=.//*[text()='View Order']
+OrderStatus_Message=(//h1[contains(text(),'Pending')])
+ActualOrderStatus=Pending
+PrintOrder_button=.//*[text()='Print Order']
+
+
+#TestCase8
+ReOrder=.//*[text()='Reorder']
+ReOrderGrandTotal_Label=(//span[contains(text(),'$6,200.00')])
+ActualReOrderGrandTotal= $6,200.00
+
+
+#TestCase9
+Iphone_AddToCart_button=.//*[@id='top']/body/div[1]/div/div[2]/div/div[2]/div[1]/div[3]/ul/li[3]/div/div[3]/button
+DiscountCode_id=coupon_code
+Apply_Code=(//span[contains(text(),'Apply')])
+Discount_label=(//span[contains(text(),'-$25.00')])
+ActualDiscount= -$25.00
+
+
+
+
+
+
+
+
+
+
+
+
+
+
